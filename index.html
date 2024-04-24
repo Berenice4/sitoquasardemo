@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1200 height=675></canvas>
+      <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -58,13 +58,13 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/webar.loader.js";
       var config = {
-        dataUrl: buildUrl + "/webar.data.br",
-        frameworkUrl: buildUrl + "/webar.framework.js.br",
-        codeUrl: buildUrl + "/webar.wasm.br",
+        dataUrl: buildUrl + "/webar.data",
+        frameworkUrl: buildUrl + "/webar.framework.js",
+        codeUrl: buildUrl + "/webar.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "WebArDemo",
-        productVersion: "1.0",
+        productVersion: "1.1.3",
         showBanner: unityShowBanner,
       };
 
@@ -93,8 +93,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "1200px";
-        canvas.style.height = "675px";
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
       }
 
       loadingBar.style.display = "block";
